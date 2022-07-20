@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Criativa</title>
+    <style>
+      body {
+        background: #e5e5e5;
+        color: #25282b;
+
+        text-align: center;
+      }
+
+      button {
+        color: #ff5e84;
+        border: none;
+
+        font-weight: bold;
+        background: none;
+      }
+
+      .fat {
+        color: white;
+        background-color: #ff5e84;
+      }
+
+      #footer a {
+        color: #25282b;
+        text-decoration: none;
+      }
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./imagens/casa-criativa-logo.png" alt="Casa Criativa Logo" />
+    <p>Ficar em casa em períodos longos, não deve ser nada fácil.</p>
+    <p>
+      Iremos catalogar ideias,<strong>
+        brincadeiras, jogos, filmes, livros, cursos, dicas</strong
+      >
+      e tudo que for necessário para tornar esse momento mais interessante.
+    </p>
+    <p>
+      Comece clicando em ver ideias para ver as ideias cadastradas e contribua
+      adicioando a sua ideia.
+    </p>
+
+    <button>+ Adicionar Ideia</button>
+    <button class="fat">Ver Ideias</button>
+
+    <p id="footer">
+      Com ❣
+      <a
+        href="https://www.linkedin.com/in/guilherme-santos-8512a1176/"
+        target="_blank"
+      >
+        Guilherme Santos</a
+      >
+    </p>
+
+    <script>
+      button_verideias = document
+        .querySelector('button.fat')
+        .addEventListener('click', function () {
+          document.querySelector('#footer').classList.toggle('hide')
+        })
+    </script>
+  </body>
+</html>
