@@ -5,41 +5,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Casa Criativa</title>
   </head>
   <body>
-    <img src="./img/casa-criativa-logo.png" alt="Casa Criativa Logo" />
-    <p>Ficar em casa em períodos longos, não deve ser nada fácil.</p>
-    <p>
-      Iremos catalogar ideias,<strong>
-        brincadeiras, jogos, filmes, livros, cursos, dicas</strong
-      >
-      e tudo que for necessário para tornar esse momento mais interessante.
-    </p>
-    <p>
-      Comece clicando em ver ideias para ver as ideias cadastradas e contribua
-      adicioando a sua ideia.
-    </p>
+    <div id="container">
+      <section id="intro">
+        <header>
+          <img src="./img/casa-criativa-logo.png" alt="Casa Criativa Logo" />
+        </header>
+        <main>
+          <p>Ficar em casa em períodos longos, não deve ser nada fácil.</p>
+          <p>
+            Iremos catalogar ideias,<strong>
+              brincadeiras, jogos, filmes, livros, cursos, dicas</strong
+            >
+            e tudo que for necessário para tornar esse momento mais
+            interessante.
+          </p>
+          <p>
+            Comece clicando em ver ideias para ver as ideias cadastradas e
+            contribua adicioando a sua ideia.
+          </p>
+        </main>
+        <!--Secao onde fica os botoes da pagina-->
+        <section id="buttons">
+          <button>+ Adicionar Ideia</button>
+          <button class="fat">Ver Ideias</button>
+        </section>
 
-    <button>+ Adicionar Ideia</button>
-    <button class="fat">Ver Ideias</button>
+        <footer id="footer">
+          Com ❣
+          <a
+            href="https://www.linkedin.com/in/guilherme-santos-8512a1176/"
+            target="_blank"
+          >
+            Guilherme Santos</a
+          >
+        </footer>
+      </section>
+      <section id="last-ideias">
+        <!--Parte onde as caixa de ideias fica-->
+        <div class="idea">
+          <img src="./img/exercise.png" alt="exercise image" />
+          <div class="content">
+            <h3>Exercício Físico</h3>
+            <p>Saúde</p>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              dolores dignissimos explicabo voluptatibus ex culpa nam ullam
+            </div>
+            <a href="#">Ir para a ideia</a>
+          </div>
+        </div>
+        <div class="idea">
+          <img src="./img/game-console.png" alt="game console image" />
+          <div class="content">
+            <h3>Jogar Videogame</h3>
+            <p>Entreterimento</p>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              dolores dignissimos explicabo voluptatibus ex culpa nam ullam
+            </div>
+            <a href="#">Ir para a ideia</a>
+          </div>
+        </div>
+        <div class="idea">
+          <img src="./img/online-learning.png" alt="Online Learning image" />
+          <div class="content">
+            <h3>Cursos Online</h3>
+            <p>Estudos</p>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              dolores dignissimos explicabo voluptatibus ex culpa nam ullam
+            </div>
+            <a href="#">Ir para a ideia</a>
+          </div>
+        </div>
+      </section>
+    </div>
 
-    <p id="footer">
-      Com ❣
-      <a
-        href="https://www.linkedin.com/in/guilherme-santos-8512a1176/"
-        target="_blank"
-      >
-        Guilherme Santos</a
-      >
-    </p>
-
-    <script>
-      button_verideias = document
-        .querySelector('button.fat')
-        .addEventListener('click', function () {
-          document.querySelector('#footer').classList.toggle('hide')
-        })
-    </script>
+    <!--Modal-->
+    <div id="modal">
+      <div class="content">
+        <h1>Nova Ideia</h1>
+        <form action="">
+          <div class="input-wrapper">
+            <label for="title">Titulo da Ideia</label>
+            <input type="text" name="title" />
+          </div>
+          <div class="input-wrapper">
+            <label for="category">Categoria</label>
+            <input type="text" name="category" />
+          </div>
+          <div class="input-wrapper">
+            <label for="image">Imagem</label>
+            <input type="url" name="image" />
+          </div>
+          <div class="input-wrapper">
+            <label for="description">Descricao</label>
+            <textarea name="description" cols="30" rows="10"></textarea>
+          </div>
+          <div class="input-wrapper">
+            <label for="link">Link da Ideia</label>
+            <input type="url" name="link" />
+          </div>
+          <button>Salvar</button>
+        </form>
+      </div>
+    </div>
+    <script src="/script.js"></script>
   </body>
 </html>
