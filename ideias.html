@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ideias</title>
+  </head>
+  <body id="page-ideas">
+    <div id="container">
+      <header>
+        <img src="./img/casa-criativa-logo.png" alt="img logo marca" />
+        <nav>
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="#">Ideias</a></li>
+          <li><a href="#" onclick="on0ff()">Nova Ideia</a></li>
+        </nav>
+      </header>
+      <section id="title">
+        <p>em exibicao</p>
+        <h1>Ideias</h1>
+      </section>
+      <main>
+        <section id="ideas">
+          <!--Parte onde as caixa de ideias fica-->
+          <div class="idea">
+            <img src="./img/exercise.png" alt="exercise image" />
+            <div class="content">
+              <h3>Exercício Físico</h3>
+              <p>Saúde</p>
+              <div class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              </div>
+              <a href="#">Ir para a ideia</a>
+            </div>
+          </div>
+          <div class="idea">
+            <img src="./img/game-console.png" alt="game console image" />
+            <div class="content">
+              <h3>Jogar Videogame</h3>
+              <p>Entreterimento</p>
+              <div class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              </div>
+              <a href="#">Ir para a ideia</a>
+            </div>
+          </div>
+          <div class="idea">
+            <img src="./img/online-learning.png" alt="Online Learning image" />
+            <div class="content">
+              <h3>Cursos Online</h3>
+              <p>Estudos</p>
+              <div class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              </div>
+              <a href="#">Ir para a ideia</a>
+            </div>
+          </div>
+          <div class="idea">
+            <img src="./img/video.png" alt="movie img" />
+            <div class="content">
+              <h3>Filmes</h3>
+              <p>Entreterimento</p>
+              <div class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              </div>
+              <a href="#">Ir para a ideia</a>
+            </div>
+        </section>
+      </main>
+      <footer id="footer">
+        Com ❣
+        <a
+          href="https://www.linkedin.com/in/guilherme-santos-8512a1176/"
+          target="_blank"
+        >
+          Guilherme Santos</a
+        >
+      </footer>
+    </div>
+
+
+<!--Modal-->
+    <div id="modal" class="hide">
+      <div class="content">
+        <h1>Nova Ideia</h1>
+        <form action="">
+          <div class="input-wrapper">
+            <label for="title">Titulo da Ideia</label>
+            <input type="text" name="title" />
+          </div>
+          <div class="input-wrapper">
+            <label for="category">Categoria</label>
+            <input type="text" name="category" />
+          </div>
+          <div class="input-wrapper">
+            <label for="image">Imagem</label>
+            <input type="url" name="image" />
+          </div>
+          <div class="input-wrapper">
+            <label for="description">Descricao</label>
+            <textarea name="description" cols="30" rows="10"></textarea>
+          </div>
+          <div class="input-wrapper">
+            <label for="link">Link da Ideia</label>
+            <input type="url" name="link" />
+          </div>
+          <a href="#" onclick="on0ff()">Voltar</a>
+          <button>Salvar</button>
+        </form>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
