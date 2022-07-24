@@ -1,5 +1,3 @@
-button_verideias = document
-  .querySelector('button.fat')
-  .addEventListener('click', function () {
-    document.querySelector('#footer').classList.toggle('hide')
-  })
+function on0ff() {
+  document.querySelector('#modal').classList.toggle('hide')
+}
